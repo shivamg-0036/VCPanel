@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/shivamg-0036/VCPanel/static/css/main.27a626ba.css",
-    "main.js": "/shivamg-0036/VCPanel/static/js/main.0c2b0fa4.js",
-    "index.html": "/shivamg-0036/VCPanel/index.html",
-    "main.27a626ba.css.map": "/shivamg-0036/VCPanel/static/css/main.27a626ba.css.map",
-    "main.0c2b0fa4.js.map": "/shivamg-0036/VCPanel/static/js/main.0c2b0fa4.js.map"
+    "main.css": "/VCPanel/static/css/main.27a626ba.css",
+    "main.js": "/VCPanel/static/js/main.68c480d1.js",
+    "index.html": "/VCPanel/index.html",
+    "main.27a626ba.css.map": "/VCPanel/static/css/main.27a626ba.css.map",
+    "main.68c480d1.js.map": "/VCPanel/static/js/main.68c480d1.js.map"
   },
   "entrypoints": [
     "static/css/main.27a626ba.css",
-    "static/js/main.0c2b0fa4.js"
+    "static/js/main.68c480d1.js"
   ]
 }
