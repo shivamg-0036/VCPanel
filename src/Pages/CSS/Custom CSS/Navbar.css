@@ -1,0 +1,27 @@
+.ul-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-class {
+    width: 9rem;
+    height: 4.7rem;
+    margin-top: 0.3rem;
+}
+
+@media (max-width:767px) {
+    .navbar-wrapper {
+        height: 4.3rem;
+        margin-top: -1.35rem;
+        padding-top: 0;
+    }
+
+    .img-class{
+        margin-top: 0;
+    }
+
+    .non-mobile{
+        display: none;
+    }
+}

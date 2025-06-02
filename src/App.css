@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+}
+
+
+.App-container{
+  width: 100%;
+  height: 100vh;
+
+}
+
+.App-outermost-container{
+  width: 100%;
+  height: 100%;
+  /* border: 3px solid red; */
+}
+
+.Navbar-container{
+width: 100%;
+height: 4.3rem;
+/* border: 3px solid greenyellow; */
+}
+
+.content-div{
+  width: 100%;
+  height: calc(100% - 4.3rem);
+  /* border: 3px solid yellow; */
+  padding: 1rem;
+  display: flex;
+
+  /* border: 2px solid red; */
+}
+
+.Sidebar-container{
+  height: auto;
+  width: auto;
+  max-width: 18rem;
+  min-width: 4rem;
+  align-self: flex-start;
+  margin-right: 0.1rem;
+  background-color: #fff;
+  transition: width 0.5s ease;
+  padding: 0;
+}
+
+.Sidebar-container.open-side{
+  width: 18rem;
+}
+
+.Sidebar-container.close-side{
+  width: 4rem;
+}
+
+.Main-content-div.close-side {
+width: calc(100% - 4rem);
+}
+
+
+.Main-content-div.open-side{
+width: calc(100% - 18rem);
+}
+
+
+.Main-content-div{
+  height: 100%;
+/*   
+  border: 3px solid wheat; */
+  transition: width 0.5s ease;
+overflow-y: auto;  
+  position: relative; /* good for controlling children */
+}
+
+/* Hide the OK button */
+.ant-picker-footer-extra {
+  display: none;
+}
+
+
