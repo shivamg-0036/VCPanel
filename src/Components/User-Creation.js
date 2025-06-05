@@ -333,7 +333,7 @@ export default function User_Creation() {
             <div className="content-body mb-2" >
                 <div className="">
                     <div className="col-12"  >
-                        <div className="card"  >
+                        <div className="card" style={{boxShadow:  "0 0px 12px rgba(8, 70, 243, 0.4)"}} >
                             <div className="card-header">
                                 <h5 className="card-title" style={{ fontWeight: "600" }}>USER MANAGEMENT PANEL</h5>
                             </div>

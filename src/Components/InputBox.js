@@ -11,14 +11,14 @@ export default function InputBox({ label, type = "text", placeholder = "", maxLe
             </label>
 
             {isreq ? <span class="text-danger" style={{ fontSize: "1rem", fontWeight: "600", marginLeft: "0.2rem" }} >*</span> : <span style={{ fontSize: "1.14rem", fontWeight: "600", marginLeft: "0.2rem" }}></span>}
-
+            <br />
 
             <input
                 type={type}
                 className="form-control"
                 placeholder={placeholder}
                 maxLength={maxLength}
-                style={{ width: getInputWidth(maxLength), fontSize:"0.9rem", marginTop:"0.1rem" }}
+                style={{ width: getInputWidth(maxLength), fontSize:"0.9rem", marginTop:"0.1rem", padding:"0.3rem 0.4rem", borderColor:"rgb(210, 210, 211)" }}
                 boxSizing='content-box'
                 disabled={disable}
             />

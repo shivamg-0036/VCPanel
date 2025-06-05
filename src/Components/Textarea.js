@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-export default function Textarea({ label, placeholder, value, onChange, maxLength,col="12",rows="2", disable=false, overflow="hidden" }) {
+export default function Textarea({ label, placeholder, value, onChange, maxLength,col="12",rows="2", disable=false, overflow="hidden",infoList = [] }) {
   const textareaRef = useRef(null);
 
   // Adjust height when value changes
@@ -33,6 +33,54 @@ export default function Textarea({ label, placeholder, value, onChange, maxLengt
         }}
         rows={rows}
       />
+      {/* <div style={{display:"flex",justifyContent:"space-between", alignItems:"center",flex:"0 0 100%",  maxWidth:"100%", fontSize:"0.8rem", marginTop:"0.2rem"}}>
+        <div>
+         <strong><span>Characters: </span></strong>
+          <span>0</span>
+        </div>
+
+        <div >
+          <strong>
+            <span>Message Part: </span>
+          </strong>
+          
+         <span>Multipart <strong>[ 2 ]</strong></span>
+        </div>
+
+        <div>
+          <strong>
+            <span>Message Encoding: </span></strong>
+            <span>Unicode</span>
+        </div>
+
+        <div>
+          <strong>
+            <span>SMS Credit: </span></strong>
+            <span>2</span>
+        </div>
+
+
+
+
+      </div> */}
+
+         {infoList.length > 0 && (
+        <div style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          fontSize: "0.8rem",
+          marginTop: "0.4rem"
+        }}>
+          {infoList.map((info, index) => (
+            <div key={index}>
+              <strong>{info.label}: </strong>
+              <span>{info.value}</span>
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

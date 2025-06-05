@@ -1,6 +1,6 @@
 .side-icon-div {
     width: auto;
-    height: 3rem;
+    height: 2.5rem;
     color: #55595c;
     display: flex;
     align-items: center;
@@ -12,8 +12,8 @@
 .side-text-div {
     flex: 0 0 85%;
     max-width: 85%;
-    height: 3rem;
-    min-height: 3rem;
+    height: 2.5rem;
+    min-height: 2.5rem;
     width: 100%;
     color: #797d80;
     letter-spacing: 0.07rem;
@@ -22,6 +22,7 @@
     margin-left: 1.1rem;
     margin-top: 0.2rem;
     text-decoration: none;
+    font-size: 0.9rem;
 }
 
 

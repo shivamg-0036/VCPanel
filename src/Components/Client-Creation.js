@@ -101,8 +101,8 @@ export default function Client_Creation() {
         <div class="content-body" style={{ fontSize: "0.8rem" }}>
             <section class="inputmask" id="inputmask">
                 <div class="row">
-                    <div class="col-12">
-                        <div class="card" style={{ minHeight: "98%" }} >
+                    <div class="col-12"  >
+                        <div class="card" style={{ minHeight: "98%", boxShadow:  "0 0px 12px rgba(8, 70, 243, 0.4)" }} >
                             <div class="card-header">
                                 <h6 class="card-title font-weight-bold">Enterprise & Department - View / Add</h6>
                             </div>

@@ -26,10 +26,11 @@ export default function SelectBox({ label, options, value, onChange, isreq = fal
                 onChange={onChange}
                 className="form-control"
                 style={{
-                    padding: '0.5rem 0.75rem',
+                    padding: '0.3rem 0.75rem',
                     margin: '0.1rem 0',
                     width: width || '100%',
-                    fontSize:"0.9rem"
+                    fontSize:"0.9rem",
+                    height:"2.7rem"
                 }}
                 disabled={disabled}
             >

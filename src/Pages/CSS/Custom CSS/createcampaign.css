@@ -1,37 +1,37 @@
-.card-body-div{
+.card-body-div {
     flex: 0 0 100%;
     max-width: 100%;
     height: 100%;
     display: flex;
 }
 
-.card-left{
-    flex:0 0 74%;
+.card-left {
+    flex: 0 0 74%;
     max-width: 74%;
     height: 100%;
     overflow-y: auto;
 }
 
-.card-right{
-    flex:0 0 26%;
+.card-right {
+    flex: 0 0 26%;
     max-width: 26%;
     height: 100%;
-    top: 10%;
-    right: 3%;
+    top: 9.4%;
+    right: 2.2%;
     padding: 0.5rem 0rem;
     padding-left: 0.6rem;
     justify-content: center;
-  display: flex;
-  position: fixed;
-  align-items: center;
+    display: flex;
+    position: fixed;
+    align-items: center;
 }
 
-.div-flex{
+.div-flex {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 350px;
-   
+
 }
 
 .custom-file {
@@ -71,13 +71,76 @@
 }
 
 
-@media(max-width:1200px){
-    .card-right{
+.file-input-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 1rem;
+}
+
+.file-input-wrapper i {
+    font-size: 1.4rem;
+}
+
+.file-input-wrapper input[type="file"] {
+    
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-upload-div {
+    border: 0.2rem dotted rgb(10, 10, 10);
+    width: 98.3%;
+    height: 100%;
+    margin-top: 0.3rem;
+}
+
+.span-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    font-weight: 500;
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+}
+
+.file-icon-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 0.5rem;
+}
+
+
+.file-selected-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+@media(max-width:1200px) {
+    .card-right {
         display: none;
     }
 
-    .card-left{
+    .card-left {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .span-div {
+        font-size: 0.8rem;
     }
 }

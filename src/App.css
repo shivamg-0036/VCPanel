@@ -23,6 +23,7 @@
 width: 100%;
 height: 4.3rem;
 /* border: 3px solid greenyellow; */
+  box-shadow:  0 0px 12px rgba(8, 70, 243, 0.4);
 }
 
 .content-div{
@@ -45,6 +46,7 @@ height: 4.3rem;
   background-color: #fff;
   transition: width 0.5s ease;
   padding: 0;
+  box-shadow:  0 0px 12px rgba(8, 70, 243, 0.4);
 }
 
 .Sidebar-container.open-side{
@@ -71,6 +73,13 @@ width: calc(100% - 18rem);
   border: 3px solid wheat; */
   transition: width 0.5s ease;
 overflow-y: auto;  
+ /* Hide scrollbar for WebKit (Chrome, Safari) */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
   position: relative; /* good for controlling children */
 }
 
