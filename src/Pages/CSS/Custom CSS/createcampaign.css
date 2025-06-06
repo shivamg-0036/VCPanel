@@ -85,7 +85,7 @@
 }
 
 .file-input-wrapper input[type="file"] {
-    
+
     position: absolute;
     left: 0;
     top: 0;
@@ -124,6 +124,12 @@
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+}
+
+.card-service-div {
+    height: 1rem;
+    width: 50%;
+    margin-left: 1rem;
 }
 
 

@@ -10,7 +10,7 @@ root.render(
   //   <App />
   // </BrowserRouter>
 
-    <BrowserRouter basename="/VCPanel">
+    <BrowserRouter basename='/VCPanel'>
     <App />
   </BrowserRouter>
 

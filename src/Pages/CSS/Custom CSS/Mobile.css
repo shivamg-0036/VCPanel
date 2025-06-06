@@ -14,7 +14,7 @@
 .sender-div {
     width: 97%;
     height: 3rem;
-    background-color: #0dcaf0;
+    /* background-color: #0dcaf0; */
     position: absolute;
     top: 1.5%;
     left: 1.53%;
@@ -24,6 +24,22 @@
     align-items: center;
     color: #fff;
 
+}
+
+.sms-active {
+  background-color: #0dcaf0; /* Blue tint */
+}
+
+.rcs-active {
+  background-color: rgb(238, 62, 62); /* Lighter blue */
+}
+
+.waba-active {
+  background-color: rgb(185, 243, 69); /* WhatsApp green tint */
+}
+
+.voice-active{
+     background-color:#FFD43B;
 }
 
 .msg-div {
@@ -152,7 +168,7 @@
 .imessage p {
     border-radius: 1.15rem;
     line-height: 1.25;
-    max-width: 98%;
+    max-width: 100%;
     padding: 0.5rem .875rem;
     position: relative;
     word-wrap: break-word;
@@ -168,17 +184,52 @@ font-size: 0.92rem;
 }
 
 p.from-me {
-    align-self: flex-end;
-    background-color: #0dcaf0;
-    color: #fff;
+  align-self: flex-end;
+  background-color: #0dcaf0; /* default (maybe SMS) */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.8rem;
+  position: relative;
+  max-width: 100%;
 }
 
 p.from-me::before {
-    border-bottom-left-radius: 0.8rem 0.7rem;
-    border-right: 1rem solid #0dcaf0;
-    right: -0.35rem;
-    transform: translate(0, -0.1rem);
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -0.35rem;
+  border-right: 1rem solid #0dcaf0;
+  
+  border-bottom-left-radius: 0.8rem 0.7rem;
+  transform: translate(0, -0.1rem);
 }
+
+/* RCS override */
+p.from-me.rcs-msg {
+  background-color: rgb(238, 62, 62);;
+}
+
+p.from-me.rcs-msg::before {
+  border-right: 1rem solid rgb(238, 62, 62);;
+}
+
+/* WABA override */
+p.from-me.waba-msg {
+  background-color: rgb(185, 243, 69);
+}
+
+p.from-me.waba-msg::before {
+  border-right: 1rem solid rgb(185, 243, 69);
+}
+
+p.from-me.voice-msg {
+  background-color: #FFD43B;
+}
+
+p.from-me.voice-msg::before {
+  border-right: 1rem solid #FFD43B;
+}
+
 
 p.from-me::after {
     background-color: #fff;
@@ -189,7 +240,7 @@ p.from-me::after {
 }
 
 p[class^="from-"] {
-    margin: 0.5rem 0;
+    margin: 0.2rem 0;
     width: fit-content;
     min-width: 3rem;
     min-height: 1.8rem;
@@ -220,22 +271,8 @@ p.from-them:before {
     transform: translate(0, -0.1rem);
 }
 
-p.from-them::after {
-    background-color: #fff;
-    border-bottom-right-radius: 0.5rem;
-    left: 20px;
-    transform: translate(-30px, -2px);
-    width: 10px;
-}
 
-p[class^="from-"].emoji {
-    background: none;
-    font-size: 2.5rem;
-}
 
-p[class^="from-"].emoji::before {
-    content: none;
-}
 
 .no-tail::before {
     display: none;
@@ -249,9 +286,6 @@ p[class^="from-"].emoji::before {
     margin-bottom: 1rem !important;
 }
 
-.margin-t_one {
-    margin-top: 1rem !important;
-}
 
 
 
